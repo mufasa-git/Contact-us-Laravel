@@ -31,10 +31,12 @@
                     </div>
                 @endforeach
             @endif
-            <form action="send" method="POST">
+            <form action="{{ url('contact') }}" method="POST">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <input type="email" class="form-control text-center" placeholder="Provide an email" name="email"><br>
+                    <input type="text" class="form-control text-center" placeholder="Name" name="name"><br>
+                    <input type="email" class="form-control text-center" placeholder="Email" name="email"><br>
+                    <input type="textarea" class="form-control text-center" placeholder="Message" name="message"><br>
                     <button type="submit" class="btn btn-primary btn-md" style="margin-left: 0px;margin: auto; display: block;"t>SEND</button>
                 </div>
             </form>

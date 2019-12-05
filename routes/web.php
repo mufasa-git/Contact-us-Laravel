@@ -11,8 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index')->name('/');
 
-Route::post('send', 'MailController@send');
+Route::post('contact', 'WelcomeController@postContact');
+

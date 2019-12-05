@@ -4,6 +4,8 @@
 	<title>Test Mail</title>
 </head>
 <body>
-	<p>This is the mail you get from me.</p>
+	Hi <strong>{{ $name }}</strong>,
+ 
+	<p>{{ $body }}</p>
 </body>
 </html>
